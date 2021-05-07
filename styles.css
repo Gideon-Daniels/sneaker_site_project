@@ -1,0 +1,180 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page Container Styles */
+.content {
+  width: 100%;
+  height: 100%;
+  margin-left: 60px;
+}
+
+/* Navigation Tooltip Styling */
+#fp-nav ul li .fp-tooltip {
+  color: white;
+  background-color: #222;
+  padding: 10px;
+}
+
+/* Navigation Styling */
+#fp-nav.fp-left {
+  background-color: #ed2d34;
+  left: 0;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  width: 60px;
+}
+
+/* Product Page Styling, needed for modal */
+#productPage {
+  position: relative;
+}
+
+/* Coloring the navbar icons white */
+#fp-nav ul li a span,
+#fp-nav ul li a.active span {
+  background-color: white;
+  color: black;
+}
+
+/* Hide title and buttons */
+#product-slider h3,
+#product-slider button {
+  display: none;
+}
+
+/* Product slider active item setting */
+#product-slider .active h3,
+#product-slider .active button {
+  display: block;
+}
+
+/* Modal Styling */
+#modal {
+  display: none;
+}
+
+#modal.modal-active {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  z-index: 100;
+  width: 50vw;
+  height: 50vh;
+  transform: translate(-50%, -50%);
+}
+/* Used to prevent the carousel from stretching the screen */
+.owl-carousel {
+  overflow: hidden;
+}
+
+/* Used to scale down the home image. You can remove this. */
+img {
+  max-width: 40vw;
+}
+
+/* PLEASE START YOUR STYLES UNDERNEATH THIS */
+
+/* Testimonial Page Section */
+
+/* Social Bar */
+.social-bar {
+  width: 100%;
+  padding: 16px;
+  position: sticky;
+}
+.social-bar .socialbar-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 15px;
+}
+
+/* Social Link */
+
+.socialbar-links .social-link {
+  margin-right: 25px;
+}
+.socialbar-links .social-link a {
+  color: #464646;
+  text-decoration: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  padding: 5% 10%;
+}
+.socialbar-links .social-link a:hover {
+  background-color: red;
+  color: white;
+}
+
+#testimonialPage {
+  background-image: url(./banner.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 10%;
+}
+
+.page-header-container {
+  font-family: sans-serif;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Page Header */
+.page-heading {
+  color: #464646;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.page-subtitle {
+  color: #ed2d34;
+  font-size: 60px;
+}
+
+.testimonial-message {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 200px;
+  color: #464646;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-img {
+  height: 100px;
+  width: 100px !important;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.testimonial-name {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.2;
+  font-weight: normal;
+  color: #464646;
+  margin-top: 15px;
+}
