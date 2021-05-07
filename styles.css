@@ -88,23 +88,22 @@ img {
 
 /* Social Bar */
 .social-bar {
-  width: 100%;
-  padding: 16px;
-  position: sticky;
+  height: 25px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
 }
 .social-bar .socialbar-links {
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 15px;
+  margin-right: 50px;
+  margin-top: 30px;
 }
 
-/* Social Link */
-
-.socialbar-links .social-link {
-  margin-right: 25px;
-}
+/* Social Links */
 .socialbar-links .social-link a {
   color: #464646;
   text-decoration: none;
@@ -121,6 +120,7 @@ img {
   color: white;
 }
 
+/* Testimonial Page */
 #testimonialPage {
   background-image: url(./banner.jpg);
   display: flex;
