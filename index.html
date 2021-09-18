@@ -59,44 +59,51 @@
       crossorigin="anonymous"
     />
     <script
-      src="https://kit.fontawesome.com/a549f23a3b.js"
+      src="https://kit.fontawesome.com/674498e59a.js"
       crossorigin="anonymous"
     ></script>
+
     <!-- My CSS -->
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <!-- Social Bar -->
-    <div class="social-bar">
-      <ul class="socialbar-links">
-        <li class="social-link">
-          <a href="facebook.com"> <i class="fab fa-facebook-f"></i></a>
-        </li>
-        <li class="social-link">
-          <a href="twitter.com"><i class="fab fa-twitter"></i></a>
-        </li>
-        <li class="social-link">
-          <a href="linkedin.com"> <i class="fab fa-linkedin-in"></i></a>
-        </li>
-        <li class="social-link">
-          <a href="instagram.com"><i class="fab fa-instagram"></i> </a>
-        </li>
-      </ul>
-    </div>
-    <!--FUll PAGE  -->
+      <!-- Social Bar -->
+      <div class="social-bar">
+        <ul class="socialbar-links">
+          <li class="social-link">
+            <a href="facebook.com"> <i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li class="social-link">
+            <a href="twitter.com"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li class="social-link">
+            <a href="linkedin.com"> <i class="fab fa-linkedin-in"></i></a>
+          </li>
+          <li class="social-link">
+            <a href="instagram.com"><i class="fab fa-instagram"></i> </a>
+          </li>
+        </ul>
+      </div>
+    <!-- full page -->
     <div id="fullpage">
       <div class="section">
         <!-- Add classes where necessary and style the section appropriately -->
         <div id="homePage" class="content">
           <div class="home-details">
-            <h1 class="home-heading">Premium Air Max Sneakers</h1>
-            <p>
+            <h1 class="home-heading">Premium</h1>
+            <h1 class="heading1">Air Max Sneakers</h1>
+            <pre id="text">
               Lorem ipsum is simply dummy text of the printing and typesetting.
               Lorem Ipsum has been the industry’s standard dummy.
-            </p>
+            </pre>
             <a href="#products" class="btn">View More</a>
           </div>
-          <img src="./sneaker1.png" alt="Sneaker" data-tilt />
+          <img
+            src="./images/ghpgfhfqpsy.png"
+            alt="Sneaker"
+            data-tilt
+            class="main-image"
+          />
         </div>
       </div>
       <div class="section">
@@ -109,51 +116,140 @@
             </div>
             <div>
               <!-- Add HTML for the numbers here. They DO NOT have to animate -->
+              <div id="info">
+                <p>123<br />Shoes Delivered</p>
+                <p>321<br />New Articles</p>
+                <p>123<br />Happy customers</p>
+              </div>
             </div>
           </header>
           <!-- Product slider, please add your own classes as well to the HTML -->
           <div id="product-slider" class="owl-carousel">
             <!-- Product Item -->
             <div class="product">
-              <img src="./sneaker1.png" alt="Sneaker" />
-              <h3>White Chucks</h3>
-              <button onclick="openModal()">View Detail</button>
+              <img src="./images/308086121157201.jpg" alt="Sneaker" />
+              <h3 class="shoe">Blue Air Jordan</h3>
+              <button class="view-detail" onclick="openModal()">
+                View Detail
+              </button>
             </div>
             <!-- Product Item -->
             <div class="product">
-              <img src="./sneaker1.png" alt="Sneaker" />
-              <h3>White Chucks</h3>
-              <button onclick="openModal()">View Detail</button>
+              <img src="./images/images.jpeg" alt="Sneaker" />
+              <h3 class="shoe">White Air Jordan</h3>
+              <button class="view-detail" onclick="openModal()">
+                View Detail
+              </button>
             </div>
             <!-- Product Item -->
             <div class="product">
-              <img src="./sneaker1.png" alt="Sneaker" />
-              <h3>White Chucks</h3>
-              <button onclick="openModal()">View Detail</button>
+              <img src="./images/unnamed.jpg" alt="Sneaker" />
+              <h3 class="shoe">Red Air Jordan</h3>
+              <button class="view-detail" onclick="openModal()">
+                View Detail
+              </button>
             </div>
             <!-- Product Item -->
             <div class="product">
-              <img src="./sneaker1.png" alt="Sneaker" />
-              <h3>White Chucks</h3>
-              <button onclick="openModal()">View Detail</button>
+              <img src="./images/unnamed (1).jpg" alt="Sneaker" />
+              <h3 class="shoe">White Jordan</h3>
+              <button class="view-detail" onclick="openModal()">
+                View Detail
+              </button>
+            </div>
+            <!-- Product Item -->
+            <div class="product">
+              <img src="./images/ghpgfhfqpsy.png" alt="Sneaker" />
+              <h3 class="shoe">White Jordan</h3>
+              <button class="view-detail" onclick="openModal()">
+                View Detail
+              </button>
+            </div>
+            <div class="product">
+              <img
+                src="./images/modal images/32e34278a89c497bfd8630448e5a6b70.jpg"
+                alt="Sneaker"
+              />
+              <h3 class="shoe">Melting Jordan</h3>
+              <button class="view-detail" onclick="openModal()">
+                View Detail
+              </button>
             </div>
           </div>
+          <!-- modal begins -->
           <div id="modal">
-            <!-- Add modal content here. Please pay careful 
-                attention to layout and styling, and please ignore any functionality 
-                eg: switching images on click.
-                *PS* you do not have to create multiple of these, they should all look the same -->
-            <h2>Modal Content</h2>
+            <div class="sneaker-images">
+              <img
+                src="./images/modal images/32e34278a89c497bfd8630448e5a6b70.jpg"
+                alt="white-jordan"
+                class="main-sneaker"
+              />
+              <div class="small-sneaker-images">
+                <img
+                  src="./images/308086121157201.jpg"
+                  alt="Jordan"
+                  class="small-sneaker"
+                />
+                <img
+                  src="./images/modal images/a517c901d48d10e577a99ca0a9ea59a9.jpg"
+                  alt="Jordan"
+                  class="small-sneaker"
+                />
+                <img
+                  src="./images/308086121157201.jpg"
+                  alt="Jordan"
+                  class="small-sneaker"
+                />
+              </div>
+            </div>
+            <div>
+              <div>
+                <h5>Article P59y47fygv</h5>
+                <h2 class="main-heading">Animated Sneakers</h2>
+                <p class="sales-text">
+                  IF you like this sneaker so much why dont you place your
+                  order?
+                </p>
+              </div>
+              <div class="sneaker-sizes">
+                <div class="main-heading">Size:</div>
+                <div>37</div>
+                <div>38</div>
+                <div>39</div>
+                <div>40</div>
+                <div>41</div>
+                <div>42</div>
+                <div>43</div>
+                <div>44</div>
+              </div>
+              <div class="product-specs qty-color">
+                <div class="main-heading" id="quantity1">Qty:</div>
+                <div class="quantity">
+                  <input type="text" />
+                </div>
+                <div class="colour-text">
+                  <p class="colour-word">Colour:</p>
+                  <div class="colors">
+                    <span class="color color-1"></span>
+                    <span class="color color-2"></span>
+                    <span class="color color-3"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-price">$299.00</div>
+              <a href="#" class="btn">Buy Now</a>
+            </div>
             <!-- Button to close modal. Please style appropriately -->
-            <button onclick="openModal()">Close</button>
+            <button onclick="openModal()">X</button>
           </div>
         </div>
       </div>
-      <!-- Testimonial Section-->
+      <!-- modal ends -->
+      <!-- testimonial section -->
       <div class="section">
         <div id="testimonialPage" class="content">
           <!-- Page header -->
-          <header class="page-header-container">
+          <header class="page-header-container1">
             <h2 class="page-heading">Best In Business</h2>
             <h3 class="page-subtitle">Happy Customers</h3>
           </header>
@@ -164,56 +260,89 @@
           </div>
         </div>
       </div>
-      <!-- Contact Page -->
+      <!-- testimonial section ends -->
+
+      <!-- contact page starts -->
       <div class="section">
         <div id="contactPage" class="content">
           <!-- Page header -->
-          <header class="page-header-container">
-            <h2 class="page-heading">Questions?</h2>
-            <h3 class="page-subtitle">Let's get in touch</h3>
-          </header>
           <!-- Contact Details -->
-          <div class="contact-details-container">
-            <h4 class="contact-details-heading">Warehouse Location</h4>
-            <p class="contact-details-description">
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered .
-            </p>
-            <!-- Please insert location, contact numbers and email elements here -->
-          </div>
+          <div class="container">
+            <div class="form">
+              <header class="page-header-container2">
+                <h2 class="heading-contact">Questions?</h2>
+                <h3 class="subtitle-contact">Let's get in touch</h3>
+              </header>
+              <div class="cont">
+                <div class="contact-info">
+                  <h3 class="title">Warehouse Location</h3>
+                  <p class="text-contact">
+                    There are many variations of passages of Lorem Ipsum available, but
+                    the majority have suffered .
+                  </p>
+            <div class="info">
+              <div class="information">
+                <i class="fas fa-map-marker-alt form-icons"></i>
+                <p>123 Park Avenue, New York, United States</p>
+              </div>
+              <div class="information">
+                <i class="fas fa-phone-volume form-icons"></i>
+                <span>123-456-789</span>
+                <span>123-456-789</span>
+              </div>
+              <div class="information">
+                <i class="fas fa-paper-plane form-icons"></i>
+                <p>email@website.com</p>
+              </div>
+            </div>
+            <div class="social-media">
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>  
+
           <!-- Create new form on FORMSPREE and insert ULR in the ACTION ATTRIBUTE -->
-          <form id="contact-form">
-            <input
-              class="contact-input"
-              type="text"
-              name="full_name"
-              id="full_name"
-              placeholder="Name"
-              required
-            />
-            <input
-              class="contact-input"
-              type="tel"
-              name="contact_no"
-              id="contact_no"
-              placeholder="Contact No"
-              required
-            />
-            <input
-              class="contact-input"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email"
-              required
-            />
-            <textarea
-              class="contact-input"
-              name="message"
-              id="message"
-              placeholder="Type your message here"
-            ></textarea>
-            <button class="button" type="submit">Submit Information</button>
+          <form action="" class="contact-form">
+            <div class="input-container">
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                class="input"
+                required
+              />
+            </div>
+            <div class="input-container">
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Contact No"
+                class="input"
+                required
+              />
+            </div>
+            <div class="input-container">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                class="input"
+                required
+              />
+            </div>
+            <div class="input-container textarea">
+              <textarea
+                name="message"
+                placeholder="Type Your Message Here"
+                class="input"
+                required
+              ></textarea>
+            </div>
+            <input type="submit" value="submit information" class="btn-contact" />
           </form>
         </div>
       </div>

@@ -83,46 +83,255 @@ img {
 }
 
 /* PLEASE START YOUR STYLES UNDERNEATH THIS */
-
-/* Testimonial Page Section */
-
-/* Social Bar */
-.social-bar {
-  height: 25px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 100;
+body {
+  background-image: url(./banner.jpg);
+  font-family: "Roboto", sans-serif;
+  line-height: 25px;
 }
-.social-bar .socialbar-links {
-  list-style-type: none;
+
+/* landing page starts */
+.main-image {
+  height: 500px;
+  width: 600px;
+}
+#homePage {
   display: flex;
-  justify-content: flex-end;
+  flex-wrap: wrap;
   align-items: center;
-  margin-right: 50px;
-  margin-top: 30px;
+  box-sizing: border-box;
+  justify-content: space-evenly;
 }
 
-/* Social Links */
-.socialbar-links .social-link a {
+.home-heading {
+  font-size: 60px;
+  margin-bottom: 40px;
   color: #464646;
-  text-decoration: none;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  width: 40px;
-  padding: 5% 10%;
 }
-.socialbar-links .social-link a:hover {
+
+.heading1 {
+  color: red;
+  font-size: 60px;
+}
+
+#text {
+  font-family: sans-serif;
+  margin-left: -77px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.btn {
+  border-radius: 45px;
+  border: 2px solid black;
+  outline: none;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 48px;
+  line-height: 1.8em;
+}
+
+.btn:hover {
   background-color: red;
+  border-color: red;
+  outline: none;
   color: white;
 }
+/* landing page end */
 
-/* Testimonial Page */
+/* slide section start */
+.page-header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 100px;
+}
+
+#info {
+  display: flex;
+  gap: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding: 55px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.page-heading {
+  color: #464646;
+  font-size: 48px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 25px;
+}
+
+.page-subtitle {
+  color: red;
+  font-size: 48px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+#product-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product {
+  display: grid;
+  place-items: center;
+  justify-content: space-evenly;
+}
+
+.product img {
+  height: 400px;
+  object-fit: contain;
+}
+
+.shoe {
+  font-family: "Roboto", sans-serif;
+  color: #464646;
+  font-weight: 300;
+  line-height: 25px;
+  font-size: 25px;
+  margin-bottom: 13px;
+}
+
+.view-detail {
+  border-radius: 45px;
+  border: 2px solid black;
+  outline: none;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 0px 17px;
+  line-height: 1.8em;
+}
+/* slide ends */
+
+/* modal css */
+#modal.modal-active {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  padding: 70px;
+  margin-top: 30px;
+  margin-left: -2%;
+  opacity: 1;
+  justify-content: space-evenly;
+}
+
+.sneaker-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+  width: 50%;
+}
+
+.main-sneaker {
+  height: 286px;
+  width: 303px;
+  margin-top: -45px;
+}
+
+.small-sneaker-images {
+  display: flex;
+}
+
+.small-sneaker {
+  width: 150px;
+}
+
+#modal button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: none;
+  border: none;
+}
+
+#modal h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+#modal h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.sales-text {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.sneaker-sizes {
+  display: flex;
+  flex-direction: row;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.qty-color {
+  display: flex;
+  flex-direction: row;
+}
+
+.quantity input {
+  width: 40px;
+  margin-left: 10px;
+}
+
+.color-1,
+.color-2,
+.color-3 {
+  padding: 0.5px 13px;
+  margin-right: 5px;
+  margin-top: -10px;
+}
+.color-1 {
+  background-color: white;
+  border: solid 1px black;
+}
+.color-2 {
+  background-color: pink;
+  border: solid 1px black;
+}
+.color-3 {
+  background-color: yellow;
+  border: solid 1px black;
+}
+.colors {
+  margin-left: 200px;
+  margin-top: -24px;
+}
+
+.colour-word {
+  margin-left: 130px;
+  color: #ed2d34;
+}
+
+.main-heading {
+  color: #ed2d34;
+}
+
+.product-price {
+  color: #ed2d34;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  font-size: 40px;
+}
+/* modal ends */
+
+/* testimonial start */
 #testimonialPage {
-  background-image: url(./banner.jpg);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -130,24 +339,13 @@ img {
   padding: 5% 10%;
 }
 
-.page-header-container {
+.page-header-container1 {
   font-family: sans-serif;
   margin-bottom: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-/* Page Header */
-.page-heading {
-  color: #464646;
-  font-size: 30px;
-  margin-bottom: 15px;
-}
-
-.page-subtitle {
-  color: #ed2d34;
-  font-size: 60px;
 }
 
 .testimonial-message {
@@ -182,9 +380,228 @@ img {
 q::before {
   content: "";
 }
+
 .icon-qoutes {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
   color: #c6c6c6;
+}
+/* testimonial section ends */
+
+/* contact details starts */
+.page-header-container2 {
+  display: flex;
+  align-items: center;
+  margin-left: 32px;
+  flex-direction: column;
+}
+
+.heading-contact {
+  font-size: 50px;
+  color: #464646;
+  margin-bottom: 35px;
+  margin-top: 50px;
+}
+
+.subtitle-contact {
+  font-size: 50px;
+  color: #ed2d34;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 90vh; /*100vh*/
+  padding: 2rem;
+  background-color: transparent;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.cont {
+  display: flex;
+}
+
+.form {
+  width: 100%;
+  max-width: 1000px; /*820px*/
+  background-color: transparent;
+  border-radius: 10px;
+  z-index: 1000;
+  overflow: hidden;
+  /*display: grid;
+  grid-template-columns: repeat(2, 1fr);*/
+}
+
+.contact-info {
+  background-color: transparent;
+  width: 100%;
+  margin-top: 30px;
+  margin-right: 110px;
+}
+
+.contact-form {
+  background-color: transparent;
+  width: 100%;
+  margin-right: 110px;
+}
+
+form {
+  padding: 2.3rem 2.2rem;
+  z-index: 10;
+  overflow: hidden;
+  position: relative;
+}
+
+.input-container {
+  position: relative;
+  margin: 1rem 0;
+}
+
+::placeholder {
+  color: #464646;
+}
+
+.input {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  background: none;
+  padding: 0.6rem 1.2rem;
+  color: #464646;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  transition: 0.3s;
+}
+
+textarea.input {
+  min-height: 150px;
+  overflow-y: auto;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  height: 40px;
+}
+
+.btn-contact {
+  padding: 0.6rem 1.3rem;
+  background-color: transparent;
+  border: 2px solid black;
+  font-size: 0.95rem;
+  color: black;
+  line-height: 1;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0;
+  width: 100%;
+  height: 50px;
+}
+
+.btn-contact:hover {
+  background-color: #ed2d34;
+  border-color: #ed2d34;
+  color: #fff;
+}
+
+.contact-info {
+  padding: 2.3rem 2.2rem;
+  position: relative;
+}
+
+.contact-info .title {
+  color: #464646;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.text-contact {
+  color: #333;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.information {
+  display: flex;
+  color: #555;
+  margin: 0.7rem 0;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.form-icons {
+  color: #464646;
+  font-size: 30px;
+  margin-right: 20px;
+  margin-bottom: 8px;
+}
+
+.social-media {
+  padding: 2rem 0 0 0;
+}
+
+.social-media p {
+  color: #333;
+}
+
+.social-icons {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.social-icons a {
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  color: #464646;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 0.5rem;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background: #d41d10;
+  color: #fff;
+}
+/* contact page end */
+
+/* Social Bar */
+.social-bar {
+  height: 25px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+.social-bar .socialbar-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+
+/* Social Links */
+.socialbar-links .social-link a {
+  color: #464646;
+  text-decoration: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  padding: 5% 10%;
+}
+.socialbar-links .social-link a:hover {
+  background-color: red;
+  color: white;
 }

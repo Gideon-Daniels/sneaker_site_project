@@ -20,6 +20,8 @@ $(document).ready(function () {
     stagePadding: 200,
     loop: true,
     dots: false,
+    autoplay: true,
+    autoplaySpeed: 5000,
     //   autoplay: true,
     center: true,
   });
@@ -56,7 +58,7 @@ fetch(randomUserURL)
     //   Initialize testimonial slider
     $("#testimonial-slider").owlCarousel({
       loop: true,
-      // autoplay: true,
+      autoplay: true,
       margin: 30,
     });
   });
